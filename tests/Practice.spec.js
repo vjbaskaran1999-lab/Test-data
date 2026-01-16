@@ -29,7 +29,7 @@ test.only('Dummy test', async function ({ browser })
         fullPage: true
     });
 
-    await page.pause();
+    //await page.pause();
 
 }
 
