@@ -14,5 +14,11 @@ pipeline {
                 bat 'npx playwright test'
             }
         }
+
+        stage('Publish Report') {
+            steps {
+                archiveArtifacts artifacts: 'playwright-report/**', fingerprint: true
+            }
+        }
     }
 }
