@@ -12,7 +12,7 @@ test.only('Dummy test', async function ({ browser })
     await page.locator("[id = 'userEmail']").fill("vjbaskaran21@gmail.com");
     await page.locator("[id='userPassword']").fill("Welcome@123");
     await page.locator("#login").click();
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState('domcontentloaded');
 
     //const count = await Titlecard.count();
     //  for (let i = 0; i < count; i++) {
